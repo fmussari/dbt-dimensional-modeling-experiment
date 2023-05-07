@@ -1,0 +1,66 @@
+[0m06:53:42.846958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001828AC539A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018289C741C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018289C74A90>]}
+
+
+============================== 06:53:42.862977 | 6a6c64ab-3d3b-4454-bcb8-082b239892e5 ==============================
+[0m06:53:42.862977 [info ] [MainThread]: Running with dbt=1.5.0
+[0m06:53:42.864957 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m06:53:42.870977 [debug] [MainThread]: Starter project path: C:\ProgramData\Miniconda3\envs\powerbi\lib\site-packages\dbt\include\starter_project
+[0m07:50:46.746030 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214399B6250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214389CF2E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214389CF520>]}
+
+
+============================== 07:50:46.756034 | 6a9c90f8-b50e-4282-9e5e-16826ffbeab5 ==============================
+[0m07:50:46.756034 [info ] [MainThread]: Running with dbt=1.5.0
+[0m07:50:46.759034 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '.', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m07:50:46.765032 [info ] [MainThread]: A project called dbt_dimensional_experiment already exists here.
+[0m07:50:46.768036 [debug] [MainThread]: Command `dbt init` succeeded at 07:50:46.768036 after 0.12 seconds
+[0m07:50:46.770039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214399B6250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021435A508B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214389CF610>]}
+[0m07:50:46.772033 [debug] [MainThread]: Flushing usage events
+[0m07:52:59.372265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3F4815250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3F38302B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3F38304F0>]}
+
+
+============================== 07:52:59.382328 | 2613d21c-3aec-481a-8cd5-8382e5b0c4a5 ==============================
+[0m07:52:59.382328 [info ] [MainThread]: Running with dbt=1.5.0
+[0m07:52:59.384246 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '.', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m07:52:59.390243 [debug] [MainThread]: Starter project path: C:\ProgramData\Miniconda3\envs\powerbi\lib\site-packages\dbt\include\starter_project
+[0m07:53:24.444386 [info ] [MainThread]: Profile dbt_dimensional_demo written to profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m07:53:24.446408 [info ] [MainThread]: 
+Your new dbt project "dbt_dimensional_demo" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m07:53:24.449388 [debug] [MainThread]: Command `dbt init` succeeded at 07:53:24.449388 after 25.17 seconds
+[0m07:53:24.451384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3F4815250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3F08D0A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3F08D0D90>]}
+[0m07:53:24.452413 [debug] [MainThread]: Flushing usage events
+[0m07:54:55.577318 [error] [MainThread]: Encountered an error:
+
+[0m07:54:55.607317 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\envs\powerbi\lib\site-packages\dbt\cli\requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\envs\powerbi\lib\site-packages\dbt\cli\requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\envs\powerbi\lib\site-packages\dbt\cli\main.py", line 459, in init
+    results = task.run()
+  File "C:\ProgramData\Miniconda3\envs\powerbi\lib\site-packages\dbt\task\init.py", line 304, in run
+    adapter = self.ask_for_adapter_choice()
+  File "C:\ProgramData\Miniconda3\envs\powerbi\lib\site-packages\dbt\task\init.py", line 230, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+  File "C:\ProgramData\Miniconda3\envs\powerbi\lib\site-packages\click\termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+  File "C:\ProgramData\Miniconda3\envs\powerbi\lib\site-packages\click\termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m07:54:55.611340 [debug] [MainThread]: Command `dbt init` failed at 07:54:55.610320 after 3672.86 seconds
+[0m07:54:55.612339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001828AC539A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018289C81F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018289C810A0>]}
+[0m07:54:55.615340 [debug] [MainThread]: Flushing usage events
