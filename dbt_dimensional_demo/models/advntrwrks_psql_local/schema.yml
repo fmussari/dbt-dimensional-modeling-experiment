@@ -1,0 +1,11 @@
+# Copied from: https://docs.getdbt.com/docs/build/sources
+
+version: 2
+
+sources:
+  - name: psql_local
+    database: Adventureworks  
+    description: 'Adventureworks for Postgres'
+    schema: production
+    tables:
+      - name: product
