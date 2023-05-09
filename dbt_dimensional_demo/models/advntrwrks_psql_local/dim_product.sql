@@ -2,6 +2,7 @@
 {{ config(schema='Dimensions') }}
 
 
+
 with src_product as (
     select * 
     from {{ source('psql_local', 'product') }}
