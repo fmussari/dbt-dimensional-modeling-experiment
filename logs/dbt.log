@@ -64,3 +64,31 @@ click.exceptions.Abort
 [0m07:54:55.611340 [debug] [MainThread]: Command `dbt init` failed at 07:54:55.610320 after 3672.86 seconds
 [0m07:54:55.612339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001828AC539A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018289C81F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018289C810A0>]}
 [0m07:54:55.615340 [debug] [MainThread]: Flushing usage events
+[0m16:49:40.282281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E30053970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E2F057D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E3260AC10>]}
+
+
+============================== 16:49:40.293281 | 0757dd0c-8b6b-4b7a-9a7f-3bc9f9036f07 ==============================
+[0m16:49:40.293281 [info ] [MainThread]: Running with dbt=1.5.0
+[0m16:49:40.295282 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\fmuss\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:49:40.298281 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path m:\2023-04. dbt dimensional modelling tutorial\dbt-dimensional-modeling-experiment\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:49:40.300281 [debug] [MainThread]: Command `dbt deps` failed at 16:49:40.300281 after 0.11 seconds
+[0m16:49:40.301281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E30053970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E2F074E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E2F081130>]}
+[0m16:49:40.303262 [debug] [MainThread]: Flushing usage events
+[0m16:51:11.323433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234CA283880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234C92B1790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234C92B1520>]}
+
+
+============================== 16:51:11.333460 | b27f8299-83bb-4deb-8b95-a04325f54c0e ==============================
+[0m16:51:11.333460 [info ] [MainThread]: Running with dbt=1.5.0
+[0m16:51:11.335505 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'dbt_dimensional_demo', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:51:11.338430 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path m:\2023-04. dbt dimensional modelling tutorial\dbt-dimensional-modeling-experiment\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:51:11.340431 [debug] [MainThread]: Command `dbt deps` failed at 16:51:11.340431 after 0.13 seconds
+[0m16:51:11.342596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234CA283880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234C92B17C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234C92B1850>]}
+[0m16:51:11.343453 [debug] [MainThread]: Flushing usage events

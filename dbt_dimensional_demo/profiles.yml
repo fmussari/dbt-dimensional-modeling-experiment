@@ -3,7 +3,7 @@ dbt_dimensional_demo:
 
   outputs:
 
-    dev:
+    postgresAdventure:
       type: postgres
       threads: 4
       host: localhost
@@ -19,6 +19,18 @@ dbt_dimensional_demo:
       path: target/AdventureworksDW.duckdb
       threads: 4
 
+    supabaseAdventure:
+      # https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#setting-environment-variables
+      type: postgres
+      threads: 4
+      host: "{{ env_var('SUPABASE_HOST') }}"
+      port: 5432
+      user: "{{ env_var('SUPABASE_USER') }}"
+      pass: "{{ env_var('SUPABASE_PASS') }}"
+      database: Adventureworks
+      schema: t
+
+
     #prod:
     #  type: postgres
     #  threads: [1 or more]
@@ -29,4 +41,4 @@ dbt_dimensional_demo:
     #  dbname: [dbname]
     #  schema: [prod_schema]
 
-  target: dev
+  target: supabaseAdventure
