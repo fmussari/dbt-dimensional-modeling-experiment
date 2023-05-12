@@ -1,21 +1,19 @@
 {{ config(materialized='table') }}
 {{ config(schema='Dimensions') }}
 
-
-
 with src_product as (
     select * 
-    from {{ source('psql_local', 'product') }}
+    from {{ source('pg_production', 'product') }}
 ),
 
 src_product_subcategory as (
     select *
-    from {{ source('psql_local', 'productsubcategory') }}
+    from {{ source('pg_production', 'productsubcategory') }}
 ),
 
 src_product_category as (
     select *
-    from {{ source('psql_local', 'productcategory') }}
+    from {{ source('pg_production', 'productcategory') }}
 )
 
 select

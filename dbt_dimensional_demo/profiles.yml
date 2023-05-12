@@ -11,7 +11,7 @@ dbt_dimensional_demo:
       user: postgres
       pass: '10042076'
       database: Adventureworks
-      schema: target
+      schema: target  # this is override in each model's sql
 
     duckdb:
       # https://docs.getdbt.com/reference/warehouse-setups/duckdb-setup
@@ -19,8 +19,12 @@ dbt_dimensional_demo:
       path: target/AdventureworksDW.duckdb
       threads: 4
 
+
+    # https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#setting-environment-variables
+    # C:\ProgramData\Miniconda3\envs\powerbi\etc\conda\activate.d
+    # C:\ProgramData\Miniconda3\envs\powerbi\etc\conda\deactivate.d
+
     supabaseAdventure:
-      # https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#setting-environment-variables
       type: postgres
       threads: 4
       host: "{{ env_var('SUPABASE_HOST') }}"
@@ -29,7 +33,16 @@ dbt_dimensional_demo:
       pass: "{{ env_var('SUPABASE_PASS') }}"
       database: Adventureworks
       schema: t
-
+    
+    auroraAdventure:
+      type: postgres
+      threads: 4
+      host: "{{ env_var('AURORA_HOST') }}"
+      port: 5432
+      user: "{{ env_var('AURORA_USER') }}"
+      pass: "{{ env_var('AURORA_PASS') }}"
+      database: Adventureworks
+      schema: t
 
     #prod:
     #  type: postgres
@@ -41,4 +54,4 @@ dbt_dimensional_demo:
     #  dbname: [dbname]
     #  schema: [prod_schema]
 
-  target: supabaseAdventure
+  target: postgresAdventure

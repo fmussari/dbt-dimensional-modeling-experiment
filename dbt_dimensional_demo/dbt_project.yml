@@ -35,3 +35,10 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+      
+    advntrwrks_psql_local:
+      +materialized: view
+
+# https://github.com/calogica/dbt-date
+vars:
+    "dbt_date:time_zone": "America/Caracas"

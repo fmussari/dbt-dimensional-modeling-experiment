@@ -3,12 +3,44 @@
 version: 2
 
 sources:
-  - name: psql_local
+  - name: pg_production
     database: Adventureworks
-    description: 'Adventureworks for Postgres'
+    description: 'Adventureworks, production schema'
     schema: production
     tables:
       - name: product
       - name: productcategory
       - name: productsubcategory
 
+  - name: pg_person
+    database: Adventureworks
+    description: 'Adventureworks, person schema'
+    schema: person
+    tables:
+      - name: address
+      - name: stateprovince
+      - name: countryregion
+      - name: person
+
+  - name: pg_sales
+    database: Adventureworks
+    description: 'Adventureworks, sales schema, customer table'
+    schema: sales
+    tables:
+      - name: customer
+      - name: store
+      - name: creditcard
+      - name: salesorderheader
+      - name: salesorderdetail
+
+
+
+
+  # This source cannot be used
+  # cross-database references are not implemented: "postgres.public.test_table"
+  - name: pg_test
+    database: postgres
+    description: 'postgres, public schema'
+    schema: public
+    tables:
+      - name: test_table
