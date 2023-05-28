@@ -38,9 +38,9 @@ sources:
 
   # This source cannot be used
   # cross-database references are not implemented: "postgres.public.test_table"
-  - name: pg_test
-    database: postgres
-    description: 'postgres, public schema'
-    schema: public
-    tables:
-      - name: test_table
+  #- name: pg_test
+  #  database: postgres
+  #  description: 'postgres, public schema'
+  #  schema: public
+  #  tables:
+  #    - name: test_table

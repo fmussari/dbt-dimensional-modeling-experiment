@@ -13,13 +13,6 @@ dbt_dimensional_demo:
       database: Adventureworks
       schema: target  # this is override in each model's sql
 
-    duckdb:
-      # https://docs.getdbt.com/reference/warehouse-setups/duckdb-setup
-      type: duckdb
-      path: target/AdventureworksDW.duckdb
-      threads: 4
-
-
     # https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#setting-environment-variables
     # C:\ProgramData\Miniconda3\envs\powerbi\etc\conda\activate.d
     # C:\ProgramData\Miniconda3\envs\powerbi\etc\conda\deactivate.d
@@ -44,14 +37,4 @@ dbt_dimensional_demo:
       database: Adventureworks
       schema: t
 
-    #prod:
-    #  type: postgres
-    #  threads: [1 or more]
-    #  host: [host]
-    #  port: [port]
-    #  user: [prod_username]
-    #  pass: [prod_password]
-    #  dbname: [dbname]
-    #  schema: [prod_schema]
-
-  target: postgresAdventure
+  target: supabaseAdventure

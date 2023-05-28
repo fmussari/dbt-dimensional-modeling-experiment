@@ -9,6 +9,7 @@
 
 {%- endcall -%}
 
+
 {%- set earliest = load_result('get_dates')['data'][0][0] -%}
 {%- set latest = load_result('get_dates')['data'][0][1] -%}
 
