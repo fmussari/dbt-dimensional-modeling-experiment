@@ -18,4 +18,5 @@ select
     stg_salesorderheader.creditcardid,
     stg_creditcard.cardtype
 from stg_salesorderheader
-left join stg_creditcard on stg_salesorderheader.creditcardid = stg_creditcard.creditcardid
+left join stg_creditcard 
+    on stg_salesorderheader.creditcardid = stg_creditcard.creditcardid

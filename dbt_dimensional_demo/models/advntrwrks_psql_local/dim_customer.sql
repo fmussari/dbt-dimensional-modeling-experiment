@@ -32,5 +32,7 @@ select
     stg_store.storebusinessentityid,
     stg_store.storename
 from stg_customer
-left join stg_person on stg_customer.personid = stg_person.businessentityid
-left join stg_store on stg_customer.storeid = stg_store.storebusinessentityid
+left join stg_person 
+    on stg_customer.personid = stg_person.businessentityid
+left join stg_store 
+    on stg_customer.storeid = stg_store.storebusinessentityid

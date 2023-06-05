@@ -38,4 +38,5 @@ select
     stg_salesorderdetail.orderqty,
     stg_salesorderdetail.revenue
 from stg_salesorderdetail
-inner join stg_salesorderheader on stg_salesorderdetail.salesorderid = stg_salesorderheader.salesorderid
+inner join stg_salesorderheader 
+    on stg_salesorderdetail.salesorderid = stg_salesorderheader.salesorderid

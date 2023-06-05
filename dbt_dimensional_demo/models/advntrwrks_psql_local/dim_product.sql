@@ -26,5 +26,7 @@ select
     src_product_subcategory.name as product_subcategory_name,
     src_product_category.name as product_category_name
 from src_product
-left join src_product_subcategory on src_product.productsubcategoryid = src_product_subcategory.productsubcategoryid
-left join src_product_category on src_product_subcategory.productcategoryid = src_product_category.productcategoryid
+left join src_product_subcategory 
+    on src_product.productsubcategoryid = src_product_subcategory.productsubcategoryid
+left join src_product_category 
+    on src_product_subcategory.productcategoryid = src_product_category.productcategoryid
